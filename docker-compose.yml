@@ -20,7 +20,7 @@ services:
     networks:
       - ecommerce
 
-  # Vue.js Frontend
+  # Vue.js Frontend (Customer)
   vue:
     build:
       context: ./frontend
@@ -33,6 +33,19 @@ services:
     networks:
       - ecommerce
 
+  # Vue.js Admin Panel
+  admin:
+    build:
+      context: ./admin
+    container_name: ecommerce_admin
+    ports:
+      - "3001:3000"
+    volumes:
+      - ./admin:/app
+      - /app/node_modules
+    networks:
+      - ecommerce
+
   # MongoDB Database
   mongodb:
     image: mongo:7.0
@@ -40,8 +53,6 @@ services:
     ports:
       - "27018:27017"
     environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: password
       MONGO_INITDB_DATABASE: ecommerce
     volumes:
       - mongodb_data:/data/db

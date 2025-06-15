@@ -16,7 +16,6 @@
       <path value="$PROJECT_DIR$/backend/vendor/nette/schema" />
       <path value="$PROJECT_DIR$/backend/vendor/opis/closure" />
       <path value="$PROJECT_DIR$/backend/vendor/filp/whoops" />
-      <path value="$PROJECT_DIR$/backend/vendor/asm89/stack-cors" />
       <path value="$PROJECT_DIR$/backend/vendor/voku/portable-ascii" />
       <path value="$PROJECT_DIR$/backend/vendor/psr/log" />
       <path value="$PROJECT_DIR$/backend/vendor/psr/http-message" />
@@ -122,6 +121,8 @@
       <path value="$PROJECT_DIR$/backend/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/backend/vendor/facade/ignition-contracts" />
       <path value="$PROJECT_DIR$/backend/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/backend/vendor/jenssegers/mongodb" />
+      <path value="$PROJECT_DIR$/backend/vendor/fruitcake/php-cors" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0">
